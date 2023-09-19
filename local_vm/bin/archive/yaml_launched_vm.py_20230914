@@ -1,0 +1,62 @@
+import yaml
+import os
+import argparse
+import logging
+import subprocess
+
+subprocess.Popen(["sudo", "python3", "/data/practice/scripts/python/vm_launching/bin/yaml_launched_vm_helper.py"])
+
+logging.basicConfig(filename='log/vm_creation.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def create_vm_from_config(config_file):
+    try:
+        with open(config_file, 'r') as file:
+            config = yaml.safe_load(file)
+    except Exception as e:
+        logging.error(f"Error reading configuration: {e}")
+        return
+
+    try:
+        # Basic command
+        #cmd = f"virt-install --name={config['vm']['name']} --memory={config['vm']['memory']} --vcpus={config['vm']['cpus']} --cdrom={config['vm']['cdrom']} --os-variant={config['vm']['os_variant']}"
+
+        # Basic command initialization without --cdrom
+        #cmd = f"virt-install --name={config['vm']['name']} --memory={config['vm']['memory']} --vcpus={config['vm']['cpus']} --os-variant={config['vm']['os_variant']}"
+        cmd = f"virt-install --name={config['vm']['name']} --memory={config['vm']['memory']} --vcpus={config['vm']['cpus']} --os-variant={config['vm']['os_variant']} --import"
+
+        # If 'cdrom' key is present in the configuration, add --cdrom to the command
+        if 'cdrom' in config['vm']:
+            cmd += f" --cdrom={config['vm']['cdrom']}"
+
+        # Check for transient VM
+        if config['vm'].get('transient', False):
+            cmd += " --transient"
+
+        # Check for backing image and create an overlay if it exists
+        if 'backing_image' in config['vm']['disk']:
+            overlay_image_path = config['vm']['disk']['path']
+            #cmd_create_overlay = f"qemu-img create -f qcow2 -b {config['vm']['disk']['backing_image']} {overlay_image_path}"
+            cmd_create_overlay = f"qemu-img create -f qcow2 -b {config['vm']['disk']['backing_image']} -F qcow2 {overlay_image_path}"
+            os.system(cmd_create_overlay)
+
+        # Add disk to command
+        cmd += f" --disk path={config['vm']['disk']['path']},size={config['vm']['disk']['size']}"
+
+    except KeyError as e:
+        logging.error(f"KeyError in configuration: {e}")
+        return
+
+    exit_code = os.system(cmd)
+    if exit_code != 0:
+        logging.error(f"'virt-install' command exited with code {exit_code}.")
+    else:
+        logging.info(f"'virt-install' command executed successfully for {config['vm']['name']}.")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Create a VM based on a YAML configuration.')
+    parser.add_argument('config_path', type=str, help='Path to the YAML configuration file.')
+    args = parser.parse_args()
+    logging.info(f"Starting VM creation from {args.config_path}.")
+    create_vm_from_config(args.config_path)
+    logging.info(f"Finished VM creation process for {args.config_path}.")
+

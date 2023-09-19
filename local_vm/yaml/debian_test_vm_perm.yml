@@ -1,0 +1,11 @@
+vm:
+  name: debian-test-vm
+  memory: 8192  # 8 GB in MB
+  cpus: 2
+  disk:
+    path: /data/VMs/debian/debian-vm-test.qcow2
+    size: 16  # 16 GB
+    backing_image: /data/VMs/debian/debian_backing_image.qcow2  # This is your base image
+  #cdrom: /data/VMs/virtualMachineFiles/iso-ova/debian-live-12.1.0-amd64-xfce.iso
+  os_variant: debian10
+
