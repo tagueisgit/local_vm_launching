@@ -1,0 +1,12 @@
+vm:
+  name: centos_9_vm
+  memory: 8192  # 8 GB in MB
+  cpus: 2
+  disk:
+    path: /data/VMs/centos/centos9_vm_test.qcow2
+    size: 16  # 16 GB
+    backing_image: /data/VMs/centos/centos9_backing_image.qcow2  # This is your base image
+  #cdrom: /data/VMs/virtualMachineFiles/iso-ova/CentOS-Stream-9-latest-x86_64-dvd1.iso
+  os_variant: centos8
+  transient: true  # This indicates that the VM should be transient
+

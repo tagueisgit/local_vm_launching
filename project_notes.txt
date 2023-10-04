@@ -1,0 +1,22 @@
+Completed steps:
+- python script to launch a transient Debian VM based on a YAML file
+- helper python script to clean up the transient VM files after shutdown
+- developed a shell script to launch the backing VM
+- configured networking on backing image and child images
+- updated packages of backing image from install .iso
+- edit helper python script to properly clean up,
+
+Next steps:
+- configure working directory for new shells
+- 
+
+Notes:
+- launch backing VM and child VMs with sudo
+- backing mac is persistent at: 52:54:00:e3:31:66
+-  
+
+Commands:
+- sudo bin/start_backing_vm.sh
+- sudo bin/yaml_launched_vm_temp.py yaml/debian_test_vm_temp.yml
+- virsh attach-interface --domain centos9_backing_temp --source default --type network --config
+
