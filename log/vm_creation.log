@@ -181,3 +181,5 @@
 2023-12-31 09:09:45,750 - ERROR - 'virt-install' command exited with code 256.
 2023-12-31 09:09:45,750 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
 2023-12-31 09:10:16,008 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 09:46:39,976 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-12-31 09:46:39,976 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.

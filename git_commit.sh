@@ -23,7 +23,7 @@ if [ -z "$(git status --porcelain)" ]; then
     echo "No changes to commit."
 else
     # Add all changes to staging
-    git add . || { echo 'git add failed'; exit 1; }
+    git add -A || { echo 'git add failed'; exit 1; }
     
     # Commit the changes
     git commit -m "$message" || { echo 'git commit failed'; exit 1; }
