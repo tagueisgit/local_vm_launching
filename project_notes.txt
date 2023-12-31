@@ -8,7 +8,8 @@ Completed steps:
 
 Next steps:
 - configure working directory for new shells
-- 
+- fix perm VM tool; launching throws error:
+	- ERROR    Disk /data/VMs/debian/debian-vm-test.qcow2 is already in use by other guests ['debian-test-vm']. (Use --check path_in_use=off or --check all=off to override) 
 
 Notes:
 - launch backing VM and child VMs with sudo
@@ -16,7 +17,20 @@ Notes:
 -  
 
 Commands:
-- sudo bin/start_backing_vm.sh
+- sudo bin/start_<os>_backing_vm.sh
 - sudo bin/yaml_launched_vm_temp.py yaml/debian_test_vm_temp.yml
 - virsh attach-interface --domain centos9_backing_temp --source default --type network --config
+- sudo virsh undefine debian-test-vm
+- sudo bin/yaml_launched_vm_perm.py yaml/debian_test_vm_perm.yml
+### connect to perm vm:
+- virsh --connect qemu:///system start debian-test-vm
+- sudo virt-viewer debian-test-vm
+- virsh managedsave-remove fedora_coreos
+- virsh undefine fedora-coreos-stable
+- virsh undefine debian-test-vm (use this when done with a perm VM)
+### troubleshooting
+- virsh console debian-test-vm
+- virt-viewer debian-test-vm
+- virsh shutdown debian-test-vm
+- virsh destroy debian-test-vm
 

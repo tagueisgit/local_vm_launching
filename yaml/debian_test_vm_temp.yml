@@ -1,5 +1,5 @@
 vm:
-  name: debian-test-vm
+  name: debian_test_vm
   memory: 8192  # 8 GB in MB
   cpus: 2
   disk:

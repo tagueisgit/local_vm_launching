@@ -84,3 +84,100 @@
 2023-09-29 05:54:50,893 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
 2023-09-29 06:14:58,211 - INFO - 'virt-install' command executed successfully for debian-test-vm.
 2023-09-29 06:14:58,643 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-10-06 04:58:29,808 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-06 06:34:07,964 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-10-06 06:34:08,047 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-10-10 04:45:39,886 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-10 05:49:12,266 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-10-10 05:49:12,266 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-11 06:16:35,665 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-11 06:16:36,596 - ERROR - 'virt-install' command exited with code 256.
+2023-10-11 06:16:36,596 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-11 06:21:52,442 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-11 06:21:52,991 - ERROR - 'virt-install' command exited with code 256.
+2023-10-11 06:21:52,991 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-11 07:05:58,733 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-11 07:37:21,482 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-10-11 07:37:21,482 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-11 07:37:34,225 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-11 07:37:34,838 - ERROR - 'virt-install' command exited with code 256.
+2023-10-11 07:37:34,838 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-11 07:37:46,711 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-11 07:39:10,897 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-10-11 07:39:10,897 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-12 05:22:37,066 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-10-12 06:13:40,012 - INFO - 'virt-install' command executed successfully for debian-test-vm.
+2023-10-12 06:13:40,012 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-10-20 05:21:56,986 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:21:57,964 - ERROR - 'virt-install' command exited with code 256.
+2023-10-20 05:32:06,317 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:32:06,902 - ERROR - 'virt-install' command exited with code 256.
+2023-10-20 05:37:42,215 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:37:42,793 - ERROR - 'virt-install' command exited with code 256.
+2023-10-20 05:39:36,721 - INFO - Starting VM creation from yaml/centos9_vm_temp.yml.
+2023-10-20 05:40:28,060 - INFO - 'virt-install' command executed successfully for centos_9_vm.
+2023-10-20 05:40:28,101 - INFO - Cleaned up Centos VM image: /data/VMs/centos/centos9_vm_test.qcow2
+2023-10-20 05:43:27,918 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:43:28,409 - ERROR - 'virt-install' command exited with code 256.
+2023-10-20 05:46:40,369 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:50:02,771 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-10-20 05:54:43,460 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 05:55:17,282 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-10-20 05:55:17,322 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-10-20 05:55:30,502 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-20 06:18:02,953 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-10-20 06:18:03,196 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-10-21 06:31:49,542 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-10-21 07:16:13,293 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-10-21 07:16:13,856 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-11-13 05:40:00,477 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-11-13 06:16:45,352 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-11-13 06:16:45,408 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-16 08:20:12,379 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-16 08:20:34,642 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-16 08:20:34,677 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-16 08:21:01,449 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-16 10:06:28,874 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-16 10:06:29,143 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-21 07:56:22,011 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-21 07:56:57,104 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-21 07:56:57,172 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-30 16:14:17,524 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-30 16:14:18,582 - ERROR - 'virt-install' command exited with code 256.
+2023-12-30 16:14:18,582 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-30 16:15:20,130 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-30 16:15:20,733 - ERROR - 'virt-install' command exited with code 256.
+2023-12-30 16:15:20,733 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:22:21,738 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:22:22,921 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:22:22,921 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:24:46,733 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:24:47,341 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:24:47,341 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:28:23,221 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:28:23,817 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:28:23,817 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:34:09,171 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:34:09,781 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:34:09,781 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:36:17,186 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:36:17,795 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:36:17,795 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:36:27,424 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 06:36:28,018 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 06:36:28,019 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 06:37:14,042 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-31 06:40:14,602 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-31 06:40:14,658 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-31 06:56:58,745 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-31 06:57:36,809 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-31 06:59:09,853 - INFO - Starting VM creation from yaml/debian_test_vm_temp.yml.
+2023-12-31 06:59:44,817 - INFO - 'virt-install' command executed successfully for debian_test_vm.
+2023-12-31 06:59:44,881 - INFO - Cleaned up Debian VM image: /data/VMs/debian/debian_vm_test.qcow2
+2023-12-31 07:01:33,366 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 07:01:33,975 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 07:01:33,975 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 09:09:44,905 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
+2023-12-31 09:09:45,750 - ERROR - 'virt-install' command exited with code 256.
+2023-12-31 09:09:45,750 - INFO - Finished VM creation process for yaml/debian_test_vm_perm.yml.
+2023-12-31 09:10:16,008 - INFO - Starting VM creation from yaml/debian_test_vm_perm.yml.
